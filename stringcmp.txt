@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream>
 using namespace std;
 #include <string.h>
@@ -26,3 +27,33 @@ int main()
 	cout<<"the matched number of letters is : "<<count;
 	return 0;
 }
+=======
+#include <iostream>
+using namespace std;
+#include <string.h>
+
+int main()
+{
+ char str1[50];
+	char str2[50];
+	int i,j,n1,n2,count;
+	
+	cout<<"enter the first string\n";
+	cin>>str1;
+	cout<<"enter the second string\n";
+	cin>>str2;
+	
+	n1=strlen(str1);
+	n2=strlen(str2);
+	
+	for(i=0;i<n1;i++)
+	for(j=0;j<n2;j++)
+	{
+		if(str1[i]==str2[j])
+		count++;
+		
+	}
+	cout<<"the matched number of letters is : "<<count;
+	return 0;
+}
+>>>>>>> 668cb09a57606e22d993885d08353b0fed922990
